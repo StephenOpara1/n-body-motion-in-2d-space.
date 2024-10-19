@@ -1,0 +1,134 @@
+html, body {
+  background: black;
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+  -ms-content-zooming: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  margin: 0;
+  padding: 0;
+}
+
+#container{
+  display: none;
+}
+
+#space{
+  position: fixed;
+  background: black;
+  top: 0;
+  left: 0;
+}
+
+#input{
+  position: fixed;
+  top: 100px;
+  left: 22vw;
+  width: 50vw;
+  height: 300px;
+  background: grey;
+  padding: 20px;
+  color: white;
+}
+
+
+#start{
+  padding: 10px;
+  background: black;
+  color: white;
+}
+
+#restart{
+  position: fixed;
+  bottom: 7px;
+  right: 7px;
+  background: #1C1C1C;
+  color: white;
+  padding: 5px;
+}
+
+#yaxis{
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 0.5px;
+  background: grey;
+  z-index: 0;
+  opacity: 0.5;
+}
+#xaxis{
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 0.5px;
+  background: grey;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+
+#topy{
+  position: fixed;
+  top: 0;
+  left: 48vw;
+  color: white;
+  font-size: 12px;
+  opacity: 0.5;
+}
+#bottomy{
+  position: fixed;
+  bottom: 0;
+  left: 48vw;
+  color: white;
+  font-size: 12px;
+  opacity: 0.5;
+}
+#leftx{
+  position: fixed;
+  bottom: 49vh;
+  left: 2px;
+  color: white;
+  font-size: 12px;
+  opacity: 0.5;
+}
+#rightx{
+  position: fixed;
+  bottom: 49vh;
+  right: 5px;
+  color: white;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+#center{
+  position: fixed;
+  color: white;
+  opacity: 0.5;
+}
+
+
+#infobar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 18vh;
+  width: 15vh;
+  padding:10px;
+  background: #2D2D2D;
+  display: none;
+  color: white;
+  border-bottom-left-radius: 15px;
+}
+
+.bod{
+  position: fixed;
+  color: white;
+  font-size: 10px;
+}
+
+#path{
+  position: fixed;
+  background: transparent;
+}

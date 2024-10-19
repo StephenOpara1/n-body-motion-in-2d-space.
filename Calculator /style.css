@@ -1,0 +1,107 @@
+
+
+body{
+  background: #262626;
+}
+
+#head{
+  display: none;
+  font-size: 2em;
+  min-height: 5vh;
+  padding: 2.5vw;
+  background: black;
+  color: white;
+  border-radius: 5vw;
+}
+
+
+
+#container{
+  display: flex;
+  justify-content: space-between;
+}
+
+#input{
+  position: fixed;
+  top: 20vh;
+  left: 16vw;
+  width: 55vw;
+  min-height: 30vh;
+  background: #202020;
+  padding: 5vw;
+  border: 2px solid black;
+  border-radius: 2vw;
+  justify-content: space-between;
+}
+
+#input span{
+  position: relative;
+  left: 5vw;
+  color: white;
+  font-style: serif;
+  font-size: 1.5em;
+}
+
+#time{
+  outline: none;
+  padding: 2vw;
+  border-radius: 2em;
+  border: none;
+  color: white;
+  background: #373737;
+  border: 1px solid black;
+  box-shadow: inset 5px 5px 10px #000;
+}
+
+#solve{
+  position: relative;
+  left: 5vw;
+  background: black;
+  color: white;
+  padding: 1em;
+}
+
+
+#data{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#data > div{
+  height: 370px;
+  width: 110px;
+  padding: 20px;
+  color: #B7B7B7;
+  background: #0D0D0D;
+  border-radius: 20px;
+  margin-top: 27px;
+}
+
+#data i{
+  padding: 5px;
+  border-radius: 5px;
+  background: #2F2F2F;
+  font-size: 1.5em;
+}
+
+#refresh{
+  position: fixed;
+  bottom: 2px;
+  right: 4px;
+  padding: 5px;
+  color: white;
+  background: black;
+}
+
+a{
+  color: white;
+  outline: none;
+  text-decoration: none;
+}
+
+#links{
+  padding: 5px;
+  border-radius: 5px;
+  background: #4F4F50;
+}

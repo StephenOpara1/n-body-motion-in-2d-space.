@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animation</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="container">
+    <canvas id="space"></canvas>
+    <canvas id="path"></canvas>
+    <div id="yaxis"></div>
+    <div id="xaxis"></div>
+    <span id="topy"></span>
+    <span id="bottomy"></span>
+    <span id="leftx"></span>
+    <span id="rightx"></span>
+    <span id="center"></span>
+    <div id="infobar">
+      <span>Distance:</span>
+      <br>
+      <span id="distance"></span>
+      <br>
+      <span>Velocity:</span>
+      <br>
+      <span id="V"></span>
+      <br>
+      <span>Acceleration:</span>
+      <br>
+      <span id="acceleration"></span>
+    </div>
+    <button type="submit" id="restart">Restart</button>
+  </div>
+  <div id="input">
+    <h3>Times Normal</h3>
+    <span id="rangevalue"></span>
+    <br>
+    <br>
+    <input type="range" id="timespeed" min="1" max="1000">
+    <br>
+    <br>
+    <button id="start" type="submit">Start</button>
+  </div>
+
+<script src="./main.js"></script>
+<script src="./animation.js"></script>
+<script src="./gesture.js"></script>
+<script src="./dashboard.js"></script>
+<script src="./physics.js"></script>
+</body>
+
+</html>

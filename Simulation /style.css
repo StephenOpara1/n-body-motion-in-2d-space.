@@ -1,0 +1,65 @@
+
+body{
+  background: #2F2F2F;
+}
+
+h1{
+  position: relative;
+  top: 0;
+  left: 0;
+  background: black;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+
+#container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#container div {
+  position: relative;
+  background: #202020;
+  font-weight: 40;
+  color: white;
+  width: 120px;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 6px;
+}
+
+input{
+  width: 100px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background: #808080;
+  color: white;
+}
+
+button{
+  background: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+
+#remove{
+  margin: 2px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+h2{
+  color: white;
+  text-shadow: 3px 3px 0 black;
+}
+
