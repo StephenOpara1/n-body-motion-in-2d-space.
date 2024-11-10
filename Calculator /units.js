@@ -1,35 +1,19 @@
-let T;
-let dura;
-function output(){
-//input time of user.
-const duration = document.getElementById('time').value;
-T = parseFloat(duration);
-//stores the value of duration externally in dura.
-dura = duration;
-const text = duration.replace(/[0-9]/g, '').toLowerCase();
-//input has been properly handled by doing the necessary unit conversion, the function handling the simulation is called.
-motion();
-};
+const time = document.getElementById('time');
+const unitChoice = document.getElementById('unitChoice');
+let unitConverterIndex;
+let unitValue;
 
-const func = [
-function minToSec(m) {
-  const n = m*60;
-  return n;
+time.addEventListener('focus', () => {
+  unitChoice.style.display = 'block';
+});
+  
+  
+const unitConverter = [
+function secToSec(s) {
+  return s;
 },
 function hourToSec(h) {
   const n = h*60*60;
-  return n;
-},
-function dayToSec(d) {
-  const n = d*(24*60*60);
-  return n;
-},
-function weekToSec(w) {
-  const n = w*7*24*60*60;
-  return n;
-},
-function monthToSec(m){
-  const n = m*31*24*60*60;
   return n;
 },
 function yearToSec(y) {
@@ -37,12 +21,34 @@ function yearToSec(y) {
   return n;
 }];
 
-const units = ['minute','hour','day','week','month','year'];
+  
+unitChoice.addEventListener('change', () => {
+  const selectedUnit = unitChoice.value;
+  unitConverterIndex = parseFloat(selectedUnit);
+  switch (unitConverterIndex) {
+    case 0:
+      unitValue = 'sec';
+      break;
+    case 1:
+      unitValue = 'hrs';
+      break;
+    case 2:
+      unitValue = 'yrs';
+      break;
+    default:
+  }
+});
 
 
 
-function compare() {
-  units.forEach(function (unit) {
-    
-  });
+let T;
+let duration;
+function output(){
+T = parseFloat(time.value);
+duration = T;
+T = unitConverter[unitConverterIndex](T);
+dt = parseFloat(timeStep);
+motion();
 };
+
+  
