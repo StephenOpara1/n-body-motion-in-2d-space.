@@ -2,7 +2,6 @@
 const body = JSON.parse(sessionStorage.getItem("simData"));
 
 const G = 0.000000000066743;
-let running = true;
 /*calculates the magnitude of the acceleration caused by a body m*/
 function accel(m,r) {
   var a = G*m/(r**2);
@@ -45,7 +44,7 @@ for(let h = 0; h < body.length; h++){
 let sX;
 let sY;
 //length of the simulation time step
-const dt = 1/60;
+let dt;
 //stores how much time has passed
 let elapsedtime = 0;
 
@@ -53,7 +52,7 @@ let elapsedtime = 0;
 //function behind the system's physics.
 function motion() {
   //continues running the simulation until elapsed time is equal to the input time of the user represented by the variable T.
-  while(( elapsedtime <= T) && (running === true)){
+  while(elapsedtime <= T){
 for(let j = 0; j < body.length; j++){
   //stores the value of the below for loop temporarily 
   let acelX = 0;
@@ -96,3 +95,4 @@ for(let j = 0; j < body.length; j++){
   }
 
 
+        
