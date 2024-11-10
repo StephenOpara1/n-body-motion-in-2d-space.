@@ -15,12 +15,6 @@ body{
 }
 
 
-
-#container{
-  display: flex;
-  justify-content: space-between;
-}
-
 #input{
   position: fixed;
   top: 20vh;
@@ -42,7 +36,7 @@ body{
   font-size: 1.5em;
 }
 
-#time{
+#input input{
   outline: none;
   padding: 2vw;
   border-radius: 2em;
@@ -68,14 +62,14 @@ body{
   flex-wrap: wrap;
 }
 
-#data > div{
-  height: 370px;
-  width: 110px;
-  padding: 20px;
+#data div{
+  height: 55vh;
+  width: 35vw;
+  padding: 10px;
   color: #B7B7B7;
   background: #0D0D0D;
   border-radius: 20px;
-  margin-top: 27px;
+  margin-top: 0px;
 }
 
 #data i{
@@ -85,8 +79,16 @@ body{
   font-size: 1.5em;
 }
 
+#unitChoice{
+  color: white;
+  background: black;
+  display: none;
+  padding: 5px;
+}
+
 #refresh{
   position: fixed;
+  display: none;
   bottom: 2px;
   right: 4px;
   padding: 5px;
@@ -104,4 +106,5 @@ a{
   padding: 5px;
   border-radius: 5px;
   background: #4F4F50;
-}
+  }
+  
