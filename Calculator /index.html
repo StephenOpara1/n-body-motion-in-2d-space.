@@ -9,28 +9,41 @@
 <body>
 <div id="head">System Condition after</div>
 <br>
-<div id="container"></div>
 <div id="data"></div>
 </div>
 
 <div id="input">
     <span>In the next</span>
     <br><br>
-    <input id="time" type="text">
+    <input id="time" type="number">
+    <br>
+    <select name="" id="unitChoice">
+      <option value="0">Seconds</option>
+      <option value="1">Hours</option>
+      <option value="2">Years</option>
+    </select>
+    <br>
+    <span>Time Step(sec)</span>
+    <br><br>
+    <input type="number" id="timeStep">
     <br><br>
     <button id="solve" type="submit">Solve</button>
   <br><br>
+  
   <div id="links">
     <a href="/Simulation /index.html">Home |</a>
     <a href="/Visual/index.html">Animation |</a>
     <a href="/Graph/index.html">Graph |</a>
     <a href="/Field Colouring /index.html">Field Colouring</a>
   </div>
+  
 </div>
+
 <button id="refresh">Restart</button>
+
 <script src="./calculator.js"></script>
 <script src="./units.js"></script>
 <script src="./physics.js"></script>
 </body>
 
-</html>
+  </html>
