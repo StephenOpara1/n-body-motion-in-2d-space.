@@ -8,26 +8,32 @@ const input = document.getElementById('input');
 const data = document.getElementById('data');
 //button responsible for preparing the page for another calculation.
 const refresh = document.getElementById('refresh');
+//input element holding desired time interval of users.
+const timeStep = document.getElementById('timeStep');
+
+
 
 
 solv.addEventListener('click', function(){
-  //the head becomes visible 
-  head.style.display = 'block';
-  //removes the input region of the page
-  input.style.display = 'none';
-  //
-  data.style.display = 'block';
-  //a condition for the calculation to run.
-  running = true;
+    //the head becomes visible 
+    head.style.display = 'block';
+    //removes the input region of the page
+    input.style.display = 'none';
+    //
+    data.style.display = 'block';
     //function handling user input (unit conversion).
     output();
+    refresh.style.display = 'block';
 });
+
+
+
 
 
 //displays the system's conditions based on the input time on the page.
 function display() {
   //dura represents the time for which the conditions are true.
-  head.innerHTML ='System Condition After ' + dura;
+  head.innerHTML ='System Condition After ' + duration + unitValue;
   //creates divs for each body's condition 
   for(let i = 0; i < body.length; i++){
   data.insertAdjacentHTML('beforeend',`
@@ -52,6 +58,8 @@ function display() {
   }
 }
 
+
+//prepares the page for a new calculation 
 refresh.addEventListener('click', function(){
   //stops the calculation when restart is clicked to stop JavaScript from running it before the page is reloaded();
   running = false;
